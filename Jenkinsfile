@@ -14,7 +14,7 @@ pipeline {
 
         checkout scm
 
-        sh '''
+        bat '''
         mvn clean install package -X
         '''
       }
